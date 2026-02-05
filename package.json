@@ -1,0 +1,18 @@
+{
+  "name": "gohighlevel-docs",
+  "version": "1.0.0",
+  "description": "Auto-synced GoHighLevel API 2.0 documentation with merged OpenAPI spec",
+  "private": true,
+  "scripts": {
+    "setup": "git submodule update --init --recursive && npm install && npm run build",
+    "sync": "git submodule update --remote specs/original",
+    "merge": "node scripts/merge-openapi-specs.js",
+    "mcp-docs": "node scripts/generate-mcp-docs.js",
+    "ai-context": "node scripts/generate-ai-context.js",
+    "build": "npm run merge && npm run mcp-docs && npm run ai-context",
+    "update": "npm run sync && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

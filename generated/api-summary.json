@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-02-05T14:50:53.123Z",
+  "sourceRepo": "https://github.com/GoHighLevel/highlevel-api-docs",
+  "baseUrl": "https://services.leadconnectorhq.com",
+  "stats": {
+    "totalPaths": 285,
+    "totalOperations": 413,
+    "totalSchemas": 792,
+    "perModule": [
+      {
+        "module": "agencies",
+        "paths": 0,
+        "operations": 0,
+        "schemas": 0
+      },
+      {
+        "module": "associations",
+        "paths": 7,
+        "operations": 10,
+        "schemas": 5
+      },
+      {
+        "module": "blogs",
+        "paths": 7,
+        "operations": 7,
+        "schemas": 13
+      },
+      {
+        "module": "businesses",
+        "paths": 2,
+        "operations": 5,
+        "schemas": 8
+      },
+      {
+        "module": "calendars",
+        "paths": 20,
+        "operations": 34,
+        "schemas": 55
+      },
+      {
+        "module": "campaigns",
+        "paths": 1,
+        "operations": 1,
+        "schemas": 2
+      },
+      {
+        "module": "companies",
+        "paths": 1,
+        "operations": 1,
+        "schemas": 3
+      },
+      {
+        "module": "contacts",
+        "paths": 19,
+        "operations": 32,
+        "schemas": 63
+      },
+      {
+        "module": "conversations",
+        "paths": 17,
+        "operations": 19,
+        "schemas": 34
+      },
+      {
+        "module": "courses",
+        "paths": 1,
+        "operations": 1,
+        "schemas": 10
+      },
+      {
+        "module": "custom-fields",
+        "paths": 5,
+        "operations": 8,
+        "schemas": 10
+      },
+      {
+        "module": "custom-menus",
+        "paths": 2,
+        "operations": 5,
+        "schemas": 9
+      },
+      {
+        "module": "email-isv",
+        "paths": 1,
+        "operations": 1,
+        "schemas": 4
+      },
+      {
+        "module": "emails",
+        "paths": 4,
+        "operations": 5,
+        "schemas": 12
+      },
+      {
+        "module": "forms",
+        "paths": 3,
+        "operations": 3,
+        "schemas": 9
+      },
+      {
+        "module": "funnels",
+        "paths": 6,
+        "operations": 7,
+        "schemas": 10
+      },
+      {
+        "module": "invoices",
+        "paths": 29,
+        "operations": 41,
+        "schemas": 97
+      },
+      {
+        "module": "links",
+        "paths": 4,
+        "operations": 6,
+        "schemas": 6
+      },
+      {
+        "module": "locations",
+        "paths": 16,
+        "operations": 29,
+        "schemas": 47
+      },
+      {
+        "module": "marketplace",
+        "paths": 4,
+        "operations": 7,
+        "schemas": 6
+      },
+      {
+        "module": "medias",
+        "paths": 6,
+        "operations": 7,
+        "schemas": 10
+      },
+      {
+        "module": "oauth",
+        "paths": 3,
+        "operations": 3,
+        "schemas": 6
+      },
+      {
+        "module": "objects",
+        "paths": 5,
+        "operations": 9,
+        "schemas": 20
+      },
+      {
+        "module": "opportunities",
+        "paths": 7,
+        "operations": 10,
+        "schemas": 20
+      },
+      {
+        "module": "payments",
+        "paths": 17,
+        "operations": 24,
+        "schemas": 57
+      },
+      {
+        "module": "phone-system",
+        "paths": 2,
+        "operations": 2,
+        "schemas": 2
+      },
+      {
+        "module": "products",
+        "paths": 16,
+        "operations": 27,
+        "schemas": 64
+      },
+      {
+        "module": "proposals",
+        "paths": 4,
+        "operations": 4,
+        "schemas": 21
+      },
+      {
+        "module": "saas-api",
+        "paths": 22,
+        "operations": 22,
+        "schemas": 20
+      },
+      {
+        "module": "snapshots",
+        "paths": 4,
+        "operations": 4,
+        "schemas": 8
+      },
+      {
+        "module": "social-media-posting",
+        "paths": 29,
+        "operations": 40,
+        "schemas": 107
+      },
+      {
+        "module": "store",
+        "paths": 8,
+        "operations": 18,
+        "schemas": 40
+      },
+      {
+        "module": "surveys",
+        "paths": 2,
+        "operations": 2,
+        "schemas": 9
+      },
+      {
+        "module": "users",
+        "paths": 4,
+        "operations": 7,
+        "schemas": 10
+      },
+      {
+        "module": "voice-ai",
+        "paths": 6,
+        "operations": 11,
+        "schemas": 35
+      },
+      {
+        "module": "workflows",
+        "paths": 1,
+        "operations": 1,
+        "schemas": 2
+      }
+    ]
+  }
+}

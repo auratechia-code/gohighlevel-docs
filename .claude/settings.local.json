@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:marketplace.gohighlevel.com)",
+      "WebFetch(domain:help.gohighlevel.com)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:highlevel.stoplight.io)",
+      "Bash(dir:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git submodule add:*)",
+      "Bash(python3:*)",
+      "Bash(node -e:*)",
+      "Bash(node scripts/merge-openapi-specs.js:*)",
+      "Bash(node scripts/generate-mcp-docs.js:*)",
+      "Bash(node scripts/generate-ai-context.js:*)",
+      "Bash(npm run build:*)",
+      "Bash(gh auth:*)",
+      "Bash(winget install:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status)",
+      "Bash(where:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

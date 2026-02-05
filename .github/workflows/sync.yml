@@ -1,0 +1,57 @@
+name: Sync GoHighLevel API Docs
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update submodule to latest
+        run: |
+          git submodule update --remote specs/original
+          echo "Submodule updated"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet specs/original; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in upstream docs."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in upstream docs!"
+          fi
+
+      - name: Build merged spec
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          npm run build
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: sync GoHighLevel API docs $(date +%Y-%m-%d)"
+          git push
