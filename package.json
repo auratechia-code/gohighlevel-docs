@@ -9,7 +9,8 @@
     "merge": "node scripts/merge-openapi-specs.js",
     "mcp-docs": "node scripts/generate-mcp-docs.js",
     "ai-context": "node scripts/generate-ai-context.js",
-    "build": "npm run merge && npm run mcp-docs && npm run ai-context",
+    "readme": "node scripts/generate-readme-es.js",
+    "build": "npm run merge && npm run mcp-docs && npm run ai-context && npm run readme",
     "update": "npm run sync && npm run build"
   },
   "dependencies": {},

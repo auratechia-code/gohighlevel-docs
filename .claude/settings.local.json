@@ -20,7 +20,13 @@
       "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status)",
       "Bash(where:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create gohighlevel-docs --public --source=. --remote=origin --push --description=\"Auto-synced GoHighLevel API v2 documentation with unified OpenAPI spec and MCP server reference\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo edit auratechia-code/gohighlevel-docs --default-branch main)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" workflow list --repo auratechia-code/gohighlevel-docs)",
+      "Bash(node scripts/generate-readme-es.js:*)"
     ]
   }
 }
