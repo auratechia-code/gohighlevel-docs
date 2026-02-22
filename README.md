@@ -34,7 +34,7 @@ Este repositorio contiene **toda la documentación oficial de la API de GoHighLe
 - ✅ **413 endpoints** de la API organizados y documentados
 - ✅ **Especificación OpenAPI 3.0 unificada** (un solo archivo con todas las APIs)
 - ✅ **Documentación del servidor MCP** con configuraciones listas para copiar
-- ✅ **Markdown optimizado para IA** (45.5KB con todos los endpoints)
+- ✅ **Markdown optimizado para IA con detalle HTTP completo** (headers, params, body, responses y links externos por endpoint)
 - ✅ **Auto-sincronización semanal** desde el repo oficial de GoHighLevel
 
 ---
@@ -77,6 +77,7 @@ Ver docs/ghl/generated/ghl-api-context.md para referencia de la API de GoHighLev
 
 #### En ChatGPT o cualquier otra IA
 Copia y pega el contenido de `generated/ghl-api-context.md` al inicio de tu conversación.
+Este archivo ahora incluye por endpoint: `Request Header Parameters`, `Path Parameters`, `Query Parameters`, esquema de `Request Body` (required/optional), `Response Schema` por status code y referencias externas (incluyendo ClickUp cuando existe).
 
 ### 2. Configurar el servidor MCP
 
@@ -1145,4 +1146,4 @@ Este repositorio se sincroniza automáticamente desde el repo oficial de GoHighL
 ---
 
 **Generado automáticamente desde**: https://github.com/GoHighLevel/highlevel-api-docs
-**Última actualización**: 2026-02-05
+**Última actualización**: 2026-02-22
