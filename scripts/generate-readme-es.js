@@ -58,7 +58,7 @@ function run() {
   lines.push("- ✅ **413 endpoints** de la API organizados y documentados");
   lines.push("- ✅ **Especificación OpenAPI 3.0 unificada** (un solo archivo con todas las APIs)");
   lines.push("- ✅ **Documentación del servidor MCP** con configuraciones listas para copiar");
-  lines.push("- ✅ **Markdown optimizado para IA** (45.5KB con todos los endpoints)");
+  lines.push("- ✅ **Markdown optimizado para IA con detalle HTTP completo** (headers, params, body, responses y links externos por endpoint)");
   lines.push("- ✅ **Auto-sincronización semanal** desde el repo oficial de GoHighLevel");
   lines.push("");
   lines.push("---");
@@ -107,6 +107,7 @@ function run() {
   lines.push("");
   lines.push("#### En ChatGPT o cualquier otra IA");
   lines.push("Copia y pega el contenido de `generated/ghl-api-context.md` al inicio de tu conversación.");
+  lines.push("Este archivo ahora incluye por endpoint: `Request Header Parameters`, `Path Parameters`, `Query Parameters`, esquema de `Request Body` (required/optional), `Response Schema` por status code y referencias externas (incluyendo ClickUp cuando existe).");
   lines.push("");
 
   // MCP
